@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SecondScreenActivity"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/customToolbar"
+            layout="@layout/custom_toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            app:layout_constraintTop_toBottomOf="parent"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/welcome"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textWelcome"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/first_name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textSelectedUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textEventName"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="194dp"
+                android:text="@string/select_user"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnChooseUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textSelectedUserName"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginEnd="25dp"
+                android:text="@string/choose_a_user" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

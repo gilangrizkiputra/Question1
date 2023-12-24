@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TestOne</string>
+    <string name="enter_name">Name</string>
+    <string name="enter_sentence">Palindrome</string>
+    <string name="check">CHECK</string>
+    <string name="next">NEXT</string>
+    <string name="welcome">Welcome</string>
+    <string name="first_name">First Name:</string>
+    <string name="select_user">Selected User Name</string>
+    <string name="choose_a_user">Choose a User</string>
+    <string name="second_screen">Second Screen</string>
+    <string name="id_user">ID User</string>
+    <string name="email_user">Email User</string>
+    <string name="first_name_user">First Name User</string>
+    <string name="last_name_user">Last Name User</string>
+</resources>

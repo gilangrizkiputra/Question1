@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent"
+    tools:context=".FirstScreenActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/bg_icon"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/ic_user"
+        android:scaleType="fitCenter"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:hint="@string/enter_name"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextSentence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:hint="@string/enter_sentence"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSentence"
+        android:layout_marginTop="16dp"
+        android:text="@string/check"
+        android:background="@drawable/rounded_background"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCheck"
+        android:layout_marginTop="16dp"
+        android:text="@string/next"
+        android:background="@drawable/rounded_background"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+</RelativeLayout>
